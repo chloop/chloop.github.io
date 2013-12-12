@@ -1,0 +1,20 @@
+title: "CHLoop - Spiking Neural Networks Simulation for everybody!"
+url:
+
+timezone: Europe/Berlin
+encoding: utf-8
+
+safe: true
+lsi: false
+markdown: rdiscount
+pygments: true
+source: .
+
+exclude:
+  - /**/.git*
+  - README.md
+  - LICENSE
+  - Gemfile*
+  - Rakefile
+  - package.json
+  - node_modules
