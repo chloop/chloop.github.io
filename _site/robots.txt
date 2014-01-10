@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /feed/
-
-Sitemap: http://chloop.github.io/sitemap.xml
