@@ -1,0 +1,20 @@
+- name: Sebastian Klatt
+  forename: Sebastian
+  surname: Klatt
+  email: sebastian.klatt@rub.de
+
+- name: Mirana Pape
+  forename: Mirana
+  surname: Pape
+  email: mirana.pape@rub.de
+
+- name: Yannick Phil Schroer
+  forename: Yannick
+  middlename: Phil
+  surname: Schroer
+  email: phil.schroer@rub.de
+
+- name: Patrick Tekath
+  forename: Patrick
+  surname: Tekath
+  email: patrick.tekath@rub.de

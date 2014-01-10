@@ -1,0 +1,57 @@
+:verbatim
+  ---
+  layout: none
+  ---
+
+doctype html
+html(lang="en", prefix="schema: http://schema.org/ og: http://ogp.me/ns#")
+  head
+    meta(charset="UTF-8")
+
+    title {% unless page.title %}{{ site.title }}{% else %}{{ page.title | escape }}{% endunless %}
+
+    meta(name="viewport",         content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no")
+    meta(name="robots",           content="noodp,noydir{% if page.hidden %},noindex{% endif %}")
+    meta(name="generator",        content="Jekyll")
+    meta(name="application-name", content="{{ site.title }}")
+
+    //- Meta
+    |{% if page.description %}
+    meta(name="description", content="{{ page.description | escape }}")
+    |{% endif %}{% if page.tags and page.tags != empty %}
+    meta(name="keywords",    content="{{ page.tags | join ',' }}")
+    |{% endif %}
+
+    //- URI
+    link(rel="prefetch",  href="{{ site.url }}")
+    link(rel="home",      href="{{ site.url }}")
+    link(rel="canonical", href="{{ site.url }}{{ page.url }}")
+
+    //- Icon
+    link(rel="shortcut icon",                sizes="16x16 32x32 48x48", href="/favicon.ico")
+    link(rel="logo",                                                    href="/assets/img/logo_chloop.svg")
+
+    //- Legal
+    link(rel="license", type="text/html", title="GPL v2", href="http://www.gnu.de/documents/gpl-2.0.en.html")
+
+    //- XML
+    link(rel="sitemap",   type="application/xml",                       title="{{ site.title }} sitemap", href="/feed/atom/")
+
+    //- Bootstrap
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
+
+    //- Webfont
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic", type="text/css")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Raleway:400,300,700", type="text/css")
+
+    //- Fontawesome
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
+
+    //- Stylesheet
+    link(rel="stylesheet", href="/assets/css/theme.css")
+
+  body
+    a.sr-only(href="#content") Skip to main content
+    |{{ content }}

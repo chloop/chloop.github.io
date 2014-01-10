@@ -1,0 +1,21 @@
+
+{
+  "name": "mrg-chloop-website",
+  "description": "Project website",
+  "version": "0.1.0",
+  "homepage": "http://chloop.github.io",
+  "author": {
+    "name": "Sebastian Klatt",
+    "email": "sebastian@markow.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chloop/chloop.github.io.git"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": ">= 0.5.3",
+    "grunt-contrib-jade": ">= 0.9.0"
+  },
+  "private": true
+}

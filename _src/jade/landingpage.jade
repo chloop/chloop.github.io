@@ -1,0 +1,91 @@
+:verbatim
+  ---
+  layout: default
+  ---
+#wrap
+  section.navbar.navbar-default.navbar-fixed-top(role="navigation")
+    div.container
+      div.navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="./")
+          b {{ site.title }}
+      nav.collapse.navbar-collapse(role="navigation")
+        ul.nav.navbar-nav
+          li: a(href="#getting-started") Getting started
+          li: a(href="#what") What is CHLoop?
+          li: a(href="#installation") Installation
+          li: a(href="#examples") Examples
+          li: a(href="#about") About
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown
+            a.dropdown-toggle(href="#", data-toggle="dropdown")
+              span.glyphicon.glyphicon-book
+              = " Docs"
+              b.caret
+            ul.dropdown-menu
+              li.dropdown-header Documentation
+              li
+                a(href="./docs/blender/") CHLoop for Blender
+              li
+                a(href="./docs/nest/") CHLoop for Nest
+
+  header.jumbotron
+    .container
+      h1 {{ site.title }}
+      h2 {{ site.subtitle }}
+      p.
+        A new and easy to use toolchain for modeling and simulating realistic SNN.
+      p
+        a.btn.btn-primary.btn-lg(href="#getting-started", role="button")
+          = "Getting started »"
+
+  section.intro
+    .container
+      .row.centered
+        .col-lg-4
+          i.fa.fa-user
+          h3 Easy to use
+          p.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        .col-lg-4
+          i.fa.fa-magic
+          h3 Modeling in Blender
+          p.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        .col-lg-4
+          i.fa.fa-gears
+          h3 Simulation with Nest
+          p.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+  section#getting-started.video
+    .container
+      .row.centered
+        h2 Getting started&hellip;
+      .row
+        .span6
+          .flex-video.widescreen.centered
+            iframe(src="http://player.vimeo.com/video/79200165", frameborder="0", width="500", height="281", allowfullscreen="")
+
+  section.container#what
+    header.page-header
+      h1 What is CHLoop?
+      p.lead.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+    .content
+      = "{{ content }}"
+
+  section#group
+    .container
+      .row.centered
+        .col-lg-4.col-lg-offset-2
+          a(href="http://ruhr-uni-bochum.de/")
+            img(src="/assets/img/logo_rub_black.svg", height="50px")
+        .col-lg-4
+          a(href="http://ruhr-uni-bochum.de/mrg/memory/")
+            img(src="/assets/img/logo_mercator_black.svg", height="50px")

@@ -1,0 +1,12 @@
+---
+layout: nil
+hidden: true
+---
+{{ site.title }}
+{{ site.subtitle }}
+
+Maintainer:{% for person in site.data.maintainer %}
+  {{ person.name }} ({{ person.email }}){% endfor %}
+
+Advisor:{% for person in site.data.advisor %}
+  {% if person.title %}{{ person.title }}{% endif %} {{ person.name }} ({{ person.email }}){% endfor %}

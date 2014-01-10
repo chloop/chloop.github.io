@@ -1,0 +1,8 @@
+---
+layout: nil
+hidden: true
+---
+User-agent: *
+Disallow: /feed/
+
+Sitemap: http:{{ site.url }}/sitemap.xml

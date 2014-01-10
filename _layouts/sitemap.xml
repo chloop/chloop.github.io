@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9/">{% for page in site.pages %}{% unless page.hidden %}
+  <url>
+    <loc>http:{{ site.url }}{{ page.url }}</loc>{% if page.changefreq %}
+    <changefreq>{{ page.changefreq }}</changefreq>{% endif %}{% if page.priority %}
+    <priority>{{ page.priority }}</priority>{% endif %}
+  </url>{% endunless %}{% endfor %}{% for post in site.posts %}
+  <url>
+    <loc>http:{{ site.url }}{{ post.url }}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>{% endfor %}
+</urlset>

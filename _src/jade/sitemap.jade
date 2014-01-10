@@ -1,0 +1,21 @@
+:verbatim
+  ---
+  layout: nil
+  ---
+
+doctype xml
+urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9/")
+  |{% for page in site.pages %}{% unless page.hidden %}
+  url
+    loc http:{{ site.url }}{{ page.url }}
+    |{% if page.changefreq %}
+    changefreq {{ page.changefreq }}
+    |{% endif %}{% if page.priority %}
+    priority {{ page.priority }}
+    |{% endif %}
+  |{% endunless %}{% endfor %}{% for post in site.posts %}
+  url
+    loc http:{{ site.url }}{{ post.url }}
+    changefreq weekly
+    priority 0.2
+  |{% endfor %}

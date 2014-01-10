@@ -1,0 +1,154 @@
+
+body {
+    background-color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+/* Paragraph & Typographic */
+/*
+p {
+    line-height: 1em;
+    margin-bottom: 1.25em;
+}
+*/
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #3bc492;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.jumbotron {
+        background: url(/assets/img/neurons.png) no-repeat center top;
+        margin-top: -10px;
+	padding-top: 20px;
+	margin-bottom: 0;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.jumbotron h1 {
+        font-family: 'Raleway';
+        font-weight: 300;
+	margin-top: 125px;
+	color: white;
+	font-size: 70px;
+}
+
+.jumbotron h2 {
+        font-family: 'Raleway';
+        font-weight: 300;
+	color: white;
+	font-size: 30px;
+}
+
+.jumbotron p {
+	text-align: left;
+	color: white
+}
+
+.page-header p {
+        font-weight: 400;
+}
+
+#group {
+        background: #EBEBEB;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+}
+
+#group img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        opacity: 0.50;
+}
+
+.intro {
+    background: #EEEEEE;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.intro i {
+        color: #428bca;
+        font-size: 30px;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.video {
+    background: #428bca;
+    min-height: 281px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+}
+
+.video h2 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 20px;
+}

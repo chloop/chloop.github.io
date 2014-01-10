@@ -1,0 +1,11 @@
+CHLoop
+Simulate spiking neural networks from spatial data
+
+Maintainer:
+  Sebastian Klatt (sebastian.klatt@rub.de)
+  Mirana Pape (mirana.pape@rub.de)
+  Yannick Phil Schroer (phil.schroer@rub.de)
+  Patrick Tekath (patrick.tekath@rub.de)
+
+Advisor:
+  Ph.D. Martin Pyka (m.pyka@rub.de)
