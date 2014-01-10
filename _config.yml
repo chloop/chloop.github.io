@@ -2,8 +2,13 @@ title: "CHLoop"
 subtitle: "Simulate spiking neural networks from spatial data"
 url: //chloop.github.io
 
+source: .
+
 timezone: Europe/Berlin
 encoding: utf-8
+
+safe: true
+lsi: false
 
 pygments: true
 markdown: rdiscount
